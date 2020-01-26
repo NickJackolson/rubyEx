@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @writer.name %>
+</p>
+
+<p>
+  <strong>Expertise:</strong>
+  <%= @writer.expertise %>
+</p>
+
+<p>
+  <strong>Experience:</strong>
+  <%= @writer.experience %>
+</p>
+
+
+<h2>Reviews</h2>
+<%= render @writer.reviews %>
+ 
+<h2>Add a review:</h2>
+<%= render 'reviews/form' %>
+
+
+<%= link_to 'Edit', edit_writer_path(@writer) %> |
+<%= link_to 'Back', writers_path %>
