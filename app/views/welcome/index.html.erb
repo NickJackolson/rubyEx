@@ -1,4 +1,9 @@
 <h1>Welcome to The Grand Blog</h1>
-<p>This is a brand new Establishment</p>
+<div data-controller="hello" data-action="resize@window->hello#resize_detect">
+   <h3 data-target="hello.output"></h3>
+   <button data-action="click->hello#click_handler"> Try </button>
+</div>
+<p></p>
 <%= link_to 'To Articles', controller: 'articles' %>
 <%= link_to 'To Writers', controller: 'writers' %>
+ 
